@@ -1,0 +1,163 @@
+/*
+=============== 
+Fonts
+===============
+*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+
+/*
+=============== 
+Global Styles
+===============
+*/
+.main-content {
+	font-family: var(--ff-secondary);
+	background: var(--clr-grey-10);
+	border: 2px solid var(--clr-primary-6);
+	color: var(--clr-grey-1);
+	line-height: 1.5;
+	font-size: 0.875rem;
+}
+h1,
+h2 {
+	color: var(--clr-grey-3);
+	letter-spacing: var(--spacing);
+	text-transform: capitalize;
+	line-height: 1.25;
+	margin-bottom: 0.75rem;
+	font-family: var(--ff-primary);
+}
+h1 {
+	font-size: 3rem;
+}
+h2 {
+	font-size: 2rem;
+}
+p {
+	margin-bottom: 1.25rem;
+	color: var(--clr-grey-5);
+	text-align: center;
+}
+
+/* classes */
+.main-content {
+	width: 88vw;
+    margin: 1rem;
+	width: 90vw;
+	margin: 0 auto;
+	max-width: 1170px;
+}
+.amount {
+	font-size: 3rem;
+}
+input {
+	font-size: 1rem;
+	color: var(--clr-grey-2);
+	border-radius: 0.5rem;
+	border: 2px solid var(--clr-primary-7);
+	max-width: 23rem;
+	width: 90%;
+	height: 1.5rem;
+	margin: 1rem 0;
+	padding: 1rem 1rem;
+}
+::placeholder {
+	text-align: center;
+	color: var(--clr-primary-8);
+	font-size: 1.5rem;
+}
+
+.currencies {
+	text-transform: uppercase;
+	padding: 1rem 2rem;
+	margin: 0.5rem 0.25rem;
+	border-radius: 1rem;
+	background: var(--clr-primary-5);
+	color: var(--clr-white);
+	padding: 0.375rem 0.75rem;
+	letter-spacing: var(--spacing);
+	display: block;
+	transition: var(--transition);
+	font-size: 1.5rem;
+	border: 2px solid var(--clr-primary-5);
+	cursor: pointer;
+	box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+	border-radius: var(--radius);
+}
+.currencies:hover {
+	color: var(--clr-primary-5);
+	background: var(--clr-primary-1);
+	border-color: var(--clr-primary-1);
+}
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	margin: 3rem 4rem;
+	background-color: var(--clr-primary-9);
+	border: 3px solid var(--clr-primary-7);
+	border-radius: 1rem;
+}
+.amount-wrapper {
+	display: flex;
+	justify-content: center;
+	margin: 2rem;
+}
+.amount {
+	height: 5rem;
+	width: 100%;
+}
+.container {
+	margin: auto;
+	height: 10rem;
+	width: 70%;
+	background-color: var(--clr-primary-10);
+	border: 2px solid var(--clr-primary-9);
+	border-radius: 1rem;
+}
+.answer-wrapper,
+.error-wrapper {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 10rem;
+}
+.answer,
+.error {
+	font-size: 2rem;
+	align-self: center;
+}
+.convertTo {
+	text-align: center;
+	font-size: 2rem;
+}
+
+.currency-buttons-wrapper {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 2rem;
+}
+@media (min-width: 769px) {
+
+	.main-content{
+		width: 90vw;
+	    margin: 0 auto;
+	}
+
+	header{
+		margin: 3rem 15rem;
+	}
+
+	.amount {
+		width: 50%;
+	}
+
+	::placeholder {
+		font-size: 2rem;
+	}
+
+}

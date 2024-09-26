@@ -1,0 +1,47 @@
+<div class="main-content">
+
+
+  <!-- <div class="search-content">
+    <input type="text" placeholder="from" #from />
+    <input type="text" placeholder="to" #to />
+    <button type="button" (click)="convertAmount(from.value,to.value,amount.value)">Calculate</button>
+  </div> -->
+  <!--
+    //the {{category}} you click on, goes into function searchByCategory(category) 
+    <div class="categories">
+      <span class="category" *ngFor="let category of categories"
+      (click)="searchByCategory(category)">{{ category }}</span>
+    </div> -->
+   <header>
+    <div class="title">
+      <h1>Convert</h1>
+      <h2>USD to *</h2>
+    </div>
+   </header>
+
+<div class="container">
+    <div class="answer-wrapper" *ngFor="let exchange of exchanges">
+      <div class="answer">
+        <p>{{ exchange.conversionRate }}</p>
+      </div>
+    </div>
+    
+    <div class="error-wrapper">
+      <div  class="error">
+        <p *ngIf="errorMessage">{{errorMessage}}</p>
+      </div>
+    </div>
+</div>
+    
+
+      <div class="amount-wrapper">
+        <input class="amount" type="text" placeholder="type amount here" #amount />
+      </div> 
+      <p class="convertTo" >then click on a currency to convert to</p>
+  <div class="currency-buttons-wrapper" >
+    <button type="button" class="currencies" *ngFor="let currency of findAllList" 
+    (click)="convertAmount(usd, currency.to, amount.value)" >{{currency.to}}</button>
+  </div>
+
+
+</div>
